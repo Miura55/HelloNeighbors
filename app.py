@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, render_template
+from flask_bootstrap import Bootstrap
 import os
 
 app = Flask(__name__)
