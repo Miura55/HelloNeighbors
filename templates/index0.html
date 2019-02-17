@@ -21,7 +21,7 @@
   function getProfile(){
     // https://developers.line.me/ja/reference/liff/#liffgetprofile()
     liff.getProfile().then(function (profile) {
-      document.getElementById('displaynamefield').textContent = profile.displayName + "さんのHello Neighbor's";
+      document.getElementById('displaynamefield').textContent = profile.displayName;
 
     }).catch(function (error) {
       window.alert("Error getting profile: " + error);
@@ -44,7 +44,7 @@
 <!-- Body Part -->
 {% block content %}
 <div id="liffdata">
-  <h1><td id="displaynamefield"></td></h1>
+  <h1 id="displaynamefield"></h1>
   <h2>MENU</h2>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-primary">Primary</button>
