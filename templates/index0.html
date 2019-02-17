@@ -21,7 +21,7 @@
   function getProfile(){
     // https://developers.line.me/ja/reference/liff/#liffgetprofile()
     liff.getProfile().then(function (profile) {
-      document.getElementById('displaynamefield').textContent = profile.displayName;
+      document.getElementById('displaynamefield').textContent = profile.displayName + 'さんのHello Neighbor\'s';
 
     }).catch(function (error) {
       window.alert("Error getting profile: " + error);
