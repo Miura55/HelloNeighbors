@@ -3,6 +3,7 @@ from flask_bootstrap import Bootstrap
 import os
 
 app = Flask(__name__)
+bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
