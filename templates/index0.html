@@ -44,7 +44,23 @@
 <!-- Body Part -->
 {% block content %}
 <div id="liffdata">
-  <h1 id="displaynamefield"></h1>
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <!-- <a class="navbar-brand" href="#">未来旅行記</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02"
+            aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Hello <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <span class="navbar-text" id="displaynamefield"></span>
+    </div>
+</nav>
+  <!-- <h1 id="displaynamefield"></h1> -->
   <h2>MENU</h2>
     <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-primary">Primary</button>
