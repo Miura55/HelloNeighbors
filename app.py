@@ -1,14 +1,12 @@
 from flask import Flask, jsonify, render_template
-from flask_bootstrap import Bootstrap
 import os
 
 app = Flask(__name__)
-bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
     title = "Hello"
-    return render_template("index0.html", title=title)
+    return render_template("index.html", title=title)
 
 if __name__ == "__main__":
     app.debug = True
